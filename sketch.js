@@ -37,7 +37,8 @@ function preload() {
 let slider;
 
 function setup() {
-    createCanvas(600, 400);
+    var myCanvas = createCanvas(600, 200);
+    myCanvas.parent("containsCanvas");
 
 
     button = createButton('toggle');
@@ -47,8 +48,8 @@ function setup() {
 }
 
 function draw() {
-    background(0);
-    translate(200, 200);
+    background(32,32,32);
+    translate(100, 100);
 
     // radius = 100;
 
@@ -82,11 +83,6 @@ function draw() {
         ellipse(x, y, 8);
     }
 
-    // wave.unshift(y);
-    // line(0, 0, x, y);
-    // fill(255);
-    // ellipse(x, y, 8);
-
     var vol = amp.getLevel();
     volhistory.push(vol);
     // console.log(vol);
@@ -105,11 +101,11 @@ function draw() {
 
 
     translate(200, 0);
-    line(x - 200, y, 0, wave[0] - 200);
+    line(x - 200, y, 0, wave[0]-100);
     beginShape();
     noFill();
     for (let i = 0; i < wave.length; i++) {
-        vertex(i, wave[i] - 200);
+        vertex(i, wave[i] - 100);
     }
     endShape();
 

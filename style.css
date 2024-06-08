@@ -1,8 +1,26 @@
-html, body {
-    margin: 0;
-    padding: 0;
-  }
-  canvas {
-    display: block;
-  }
-  
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(32,32,32);
+  color: white !important;
+}
+
+canvas {
+  display: block;
+}
+
+.container{
+  margin-top: 80px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+#containsCanvas{
+  border: 1px solid white;
+}
+
+.visualiser{
+  margin-top: 100px;
+  border: 1px solid white;
+}

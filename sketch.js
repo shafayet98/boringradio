@@ -38,6 +38,8 @@ let slider;
 
 function setup() {
     createCanvas(600, 400);
+
+
     button = createButton('toggle');
     button.mousePressed(toggleSong);
     song.play();
@@ -48,31 +50,53 @@ function draw() {
     background(0);
     translate(200, 200);
 
-    radius = 100;
+    // radius = 100;
 
-    stroke(255);
-    noFill();
-    ellipse(0,0,radius*2);
+    // stroke(255);
+    // noFill();
+    // ellipse(0,0,radius*2);
 
-    let x = radius * cos(time);
-    let y = radius * sin(time);
+
+    // let x = radius * cos(time);
+    // let y = radius * sin(time);
+
+    let x = 0;
+    let y = 0;
+
+    for (let i = 0; i < 2; i++) {
+        let prevx = x;
+        let prevy = y;
+
+        let n = i * 2 + 1;
+        let radius = 45 * (4 / (n * PI));
+        x += radius * cos(n * time);
+        y += radius * sin(n * time);
+
+        stroke(255, 100);
+        noFill();
+        ellipse(prevx, prevy, radius * 2);
+
+        //fill(255);
+        stroke(255);
+        line(prevx, prevy, x, y);
+        ellipse(x, y, 8);
+    }
+
     // wave.unshift(y);
-    line(0,0,x,y);
-    fill(255);
-    ellipse(x,y,8);
-
-
+    // line(0, 0, x, y);
+    // fill(255);
+    // ellipse(x, y, 8);
 
     var vol = amp.getLevel();
     volhistory.push(vol);
     // console.log(vol);
 
-    
+
 
     // beginShape();
     // noFill();
-    for(let i = 0 ; i < volhistory.length; i++){
-        yMap = map(volhistory[i], 0,1, height/2, 0);
+    for (let i = 0; i < volhistory.length; i++) {
+        yMap = map(volhistory[i], 0, 1, height / 2, 0);
         wave.unshift(yMap);
         // vertex(i,yMap -200);
     }
@@ -80,16 +104,19 @@ function draw() {
 
 
 
-    translate(200,0);
-    line(x-200, y, 0 ,wave[0] -200);
+    translate(200, 0);
+    line(x - 200, y, 0, wave[0] - 200);
     beginShape();
     noFill();
-    for(let i = 0 ; i < wave.length; i++){
-        vertex(i,wave[i]-200);
+    for (let i = 0; i < wave.length; i++) {
+        vertex(i, wave[i] - 200);
     }
     endShape();
 
-    time += 0.05;
+    time += 0.09;
+    if (wave.length > 250) {
+        wave.pop();
+      }
 }
 
 

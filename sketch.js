@@ -48,18 +48,8 @@ function setup() {
 }
 
 function draw() {
-    background(32,32,32);
+    background(32, 32, 32);
     translate(100, 100);
-
-    // radius = 100;
-
-    // stroke(255);
-    // noFill();
-    // ellipse(0,0,radius*2);
-
-
-    // let x = radius * cos(time);
-    // let y = radius * sin(time);
 
     let x = 0;
     let y = 0;
@@ -84,24 +74,19 @@ function draw() {
     }
 
     var vol = amp.getLevel();
-    volhistory.push(vol);
-    // console.log(vol);
+    yMap = map(vol, 0, 1, height / 2, 0);
+    wave.unshift(yMap);
+    
+    // volhistory.push(vol);
 
-
-
-    // beginShape();
-    // noFill();
-    for (let i = 0; i < volhistory.length; i++) {
-        yMap = map(volhistory[i], 0, 1, height / 2, 0);
-        wave.unshift(yMap);
-        // vertex(i,yMap -200);
-    }
-    // endShape();
-
-
-
+    // for (let i = 0; i < volhistory.length; i++) {
+    //     yMap = map(volhistory[i], 0, 1, height / 2, 0);
+    //     wave.unshift(yMap);
+    // }
+    
     translate(200, 0);
-    line(x - 200, y, 0, wave[0]-100);
+    line(x - 200, y, 0, wave[0] - 100);
+
     beginShape();
     noFill();
     for (let i = 0; i < wave.length; i++) {
@@ -109,10 +94,12 @@ function draw() {
     }
     endShape();
 
-    time += 0.09;
+    time += 0.05;
+    // console.log(time);
+
     if (wave.length > 250) {
         wave.pop();
-      }
+    }
 }
 
 

@@ -41,6 +41,10 @@ function draw() {
     background(32, 32, 32);
     translate(100, 100);
 
+    let r = random(255);
+    let g = random(255);
+    let b = random(255);
+
     let x = 0;
     let y = 0;
 
@@ -75,10 +79,12 @@ function draw() {
     // }
 
     translate(200, 0);
+    stroke(r,g,b);
     line(x - 200, y, 0, wave[0] - 100);
 
     beginShape();
-    noFill();
+    // noFill();
+    fill(r,g,b);
     for (let i = 0; i < wave.length; i++) {
         vertex(i, wave[i] - 100);
     }

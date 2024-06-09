@@ -13,9 +13,6 @@ var dataset = [];
 var itzy_freaky, ive_baddie, ls_smart, ls_impurities
 var ls_easy ,ive_off_the_record, bol4_some, kep1er_another_dream;
 
-
-
-
 function preload() {
     itzy_freaky = loadSound('songs/itzy_freaky.mp3');
     ive_baddie = loadSound('songs/ive_baddie.mp3');

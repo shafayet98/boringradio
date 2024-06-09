@@ -10,26 +10,29 @@ var button;
 var data = [];
 var dataset = [];
 
+var itzy_freaky, ive_baddie, ls_smart, ls_impurities
+var ls_easy ,ive_off_the_record, bol4_some, kep1er_another_dream;
 
-function toggleSong() {
-    if (song.isPlaying()) {
-        song.pause();
-    } else {
-        song.play();
-    }
-}
+
+
 
 function preload() {
-    song = loadSound('songs/ls_smart.mp3');
+    itzy_freaky = loadSound('songs/itzy_freaky.mp3');
+    ive_baddie = loadSound('songs/ive_baddie.mp3');
+    ls_smart = loadSound('songs/ls_smart.mp3');
+    ls_impurities = loadSound('songs/ls_impurities.mp3');
+    ls_easy = loadSound('songs/ls_easy.mp3');
+    ive_off_the_record = loadSound('songs/ive_off_the_record.mp3');
+    bol4_some = loadSound('songs/bol4_some.mp3');
+    kep1er_another_dream = loadSound('songs/kep1er_another_dream.mp3');
 }
+
 
 function setup() {
     var myCanvas = createCanvas(600, 200);
     myCanvas.parent("containsCanvas");
 
-
-    button = createButton('toggle');
-    button.mousePressed(toggleSong);
+    song = bol4_some;
     song.play();
     amp = new p5.Amplitude();
 }

@@ -4,6 +4,12 @@ body {
   padding: 0;
   background: rgb(32,32,32);
   color: white !important;
+  font-family: 'Space Mono', monospace !important;
+}
+
+.logo{
+  
+  text-align: center;
 }
 
 canvas {

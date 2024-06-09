@@ -1,17 +1,8 @@
-// Coding Challenge 130.1: Drawing with Fourier Transform and Epicycles
-// Daniel Shiffman
-// https://thecodingtrain.com/CodingChallenges/130-fourier-transform-drawing.html
-// https://youtu.be/MY4luNgGfms
-
 
 let x = [];
 let y = [];
-let fourierX;
-let fourierY;
 let time = 0;
-let path = [];
 let wave = [];
-var volhistory = [];
 
 var song;
 var fft;
@@ -29,12 +20,8 @@ function toggleSong() {
 }
 
 function preload() {
-    song = loadSound('this-dot-kp.mp3');
+    song = loadSound('songs/ls_smart.mp3');
 }
-
-
-
-let slider;
 
 function setup() {
     var myCanvas = createCanvas(600, 200);
@@ -54,7 +41,7 @@ function draw() {
     let x = 0;
     let y = 0;
 
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 3; i++) {
         let prevx = x;
         let prevy = y;
 
@@ -83,7 +70,7 @@ function draw() {
     //     yMap = map(volhistory[i], 0, 1, height / 2, 0);
     //     wave.unshift(yMap);
     // }
-    
+
     translate(200, 0);
     line(x - 200, y, 0, wave[0] - 100);
 

@@ -7,6 +7,17 @@ body {
   font-family: 'Space Mono', monospace !important;
 }
 
+.mainheading_kpop{
+  color: rgb(233, 57, 236);
+}
+.mainheading_while{
+  color: rgb(25,181,255)
+}
+.mainheading_coding{
+  color: rgb(200,119,39);
+}
+
+
 .logo{
   text-align: center;
 }
@@ -33,6 +44,11 @@ canvas {
 .artist_details img{
   width: 220px;
   height: 220px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 4px solid rgb(41, 200, 142);
+  border-style: dashed;
 }
 
 
@@ -142,8 +158,28 @@ canvas {
 }
 
 .danielshiffman span a:link, .danielshiffman span a:visited{
+  text-decoration: none !important;
   color: rgb(254,69,180);
 }
 .danielshiffman span a:hover{
+  text-decoration: none !important;
   color: rgb(233, 57, 236);
+}
+
+.findme{
+  margin-top: 10px;
+  float:right;
+  text-align: right;
+}
+
+.findme p{
+  margin: 0px !important;
+}
+.findme a:link, .findme a:visited{
+  text-decoration: none;
+  color: rgb(254,69,180);
+}
+.findme a:hover{
+  text-decoration: underline;
+  color: rgb(254,69,180);
 }

@@ -18,7 +18,7 @@ canvas {
 .container{
   margin-top: 80px !important;
   margin-left: 10px !important;
-  margin-right: 10px !important;
+  margin-right: 0px !important;
 }
 
 #containsCanvas{
@@ -45,8 +45,9 @@ canvas {
 .allsongs_list li:hover{
   cursor: pointer;
   font-weight: bolder;
-  background-color: rgb(41, 200, 142);
-  color: black;
+  /* background-color: rgb(41, 200, 142); */
+  background-color: rgb(254,69,180);
+  /* color: black; */
 }
 
 .artist_details h6, .songs_container h6{
@@ -60,4 +61,89 @@ canvas {
 
 .allsongs_list li .time{
   float: right;
+}
+
+.totalcount p{
+  margin-bottom: 0px !important;
+  color: rgb(137,137,137);
+  font-size: 13px;
+}
+
+.nowplaying{
+  /* background-color: rgb(180,98,255); */
+  /* rgb(25,181,255) */
+  font-size: 14px;
+  font-style: italic;
+}
+.functionStyle{
+  color: rgb(25,181,255);
+}
+.headingnowplayingStyle{
+  color: rgb(200,119,39);
+}
+.returnHeading{
+  color: rgb(254,69,180);
+}
+.songname{
+  color: rgb(221,221,38);
+}
+.artistname{
+  color: rgb(41, 200, 142);
+}
+
+/* the msg */
+.wrapperMsg {
+  /* width: 200px; */
+  height: 32px;
+  margin: auto;
+  border: 2px solid rgb(40,126,89);
+  overflow-x: hidden;
+}
+
+.targetMsg {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(41, 200, 142);
+  animation-name: rightToLeft;
+  animation-duration: 9.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation: rightToLeft 4.5s linear infinite; */
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(-560px);
+  }
+}
+
+/* about me/ project */
+.aboutme{
+  font-size: 14px;
+}
+.aboutme h6{
+  color: rgb(200,119,39);
+  font-weight: bolder !important;
+}
+.aboutme .whythisproject{
+  font-size: 16px;
+  color: rgb(137,137,137);
+}
+
+.visualizerinspiration li a:link, .visualizerinspiration li a:visited, .websiteinspiration a:link, .websiteinspiration a:visited{
+  color: rgb(40,126,89);
+  font-size: 13px;
+}
+.visualizerinspiration li a:hover, .websiteinspiration a:hover{
+  color: rgb(41, 200, 142);
+}
+
+.danielshiffman span a:link, .danielshiffman span a:visited{
+  color: rgb(254,69,180);
+}
+.danielshiffman span a:hover{
+  color: rgb(233, 57, 236);
 }

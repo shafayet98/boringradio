@@ -1,67 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
 
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
 
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 
 
-    <meta charset="utf-8" />
 
-  </head>
-  <body>
 
-    <h4 class="logo mt-3">kpop for coding</h4>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 ">
-          <div id="containsCanvas"></div>
-          <div class="songs_container mt-5">
-            <h6>{all songs}</h6>
-            <ul class="allsongs_list">
-              <li class="itzy_freaky"><span class="">itzy - freaky</span> <span class="time">~ 2:55</span></li>
-              <li class="ive_baddie">ive - baddie <span class="time">~ 3:04</span></li>
-              <li class="ls_smart">le sserafim - smart <span class="time">~ 2:44</span></li>
-              <li class="ls_impurities">le sserafim - impurities <span class="time">~ 3:16</span></li>
-              <li class="ls_easy">le sserafim - easy <span class="time">~ 2:43</span></li>
-              <li class="ive_off_the_record">ive - off the record <span class="time">~ 3:09</span></li>
-              <li class="bol4_some">bol4 - some <span class="time">~ 3:01</span></li>
-              <li class="kep1er_another_dream">kep1er - another dream <span class="time">~ 4:07</span></li>
-            </ul>
-          </div>
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+  <h4 class="logo mt-3">${kpop} for coding</h4>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 ">
+        <div class="nowplaying"><span class="functionStyle">function</span> <span
+            class="headingnowplayingStyle">nowplaying</span>(<span>songName</span>, <span>artistName</span>){<span
+            class="returnHeading">return</span> "<span class="songname">some</span> by <span
+            class="artistname">bol4</span>"}</div>
+        <div id="containsCanvas"></div>
+        <div class="wrapperMsg mt-2">
+          <p class="targetMsg">function importantMsg(){return "Make sure to drink enough water today...^^ "}</p>
         </div>
-        <div class="col-sm-4">
-          
-          <div class="artist_details">
-            <img src="posters/bol4.png" alt="">
-            <h6 class="mt-2">{about artist}</h6>
-            <div class="details mt-2">
-              <p>
-                "Bolbbalgan4, also known as BOL4 or Blushing Youth, is a South Korean musical act formed by Shofar Music in 2016. They appeared on Superstar K6 in 2014 before signing a contract with their current agency. BOL4 was originally a duo consisting of Ahn Ji-young and Woo Ji-yoon."
-              </p>
-            </div>
+        <div class="songs_container mt-3">
+          <h6>{all songs}</h6>
+          <ul class="allsongs_list">
+            <li class="itzy_freaky"><span class="">itzy - freaky</span> <span class="time">~ 2:55</span></li>
+            <li class="ive_baddie">ive - baddie <span class="time">~ 3:04</span></li>
+            <li class="ls_smart">le sserafim - smart <span class="time">~ 2:44</span></li>
+            <li class="ls_impurities">le sserafim - impurities <span class="time">~ 3:16</span></li>
+            <li class="ls_easy">le sserafim - easy <span class="time">~ 2:43</span></li>
+            <li class="ive_off_the_record">ive - off the record <span class="time">~ 3:09</span></li>
+            <li class="bol4_some">bol4 - some <span class="time">~ 3:01</span></li>
+            <li class="kep1er_another_dream">kep1er - another dream <span class="time">~ 4:07</span></li>
+          </ul>
+          <div class="totalcount">
+            <p>// total song: 08</p>
+            <p>// times taken: around 23 minutes</p>
+            <p>// popular track: "some" by "bol4"</p>
+            <p>// How are you doing? Really?</p>
           </div>
         </div>
       </div>
-      
+      <div class="col-sm-3">
+        <div class="artist_details">
+          <img src="posters/bol4.png" alt="">
+          <h6 class="mt-2">{about artist}</h6>
+          <div class="details mt-2">
+            <p>
+              "Bolbbalgan4, also known as BOL4 or Blushing Youth, is a South Korean musical act formed by Shofar Music
+              in 2016. They appeared on Superstar K6 in 2014 before signing a contract with their current agency. BOL4
+              was originally a duo consisting of Ahn Ji-young and Woo Ji-yoon."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 aboutme">
+        <h6>{about me}</h6>
+        <p class="whythisproject">/* well i got bored and made this site. i have no intention to update this in future. but you guys can,
+          wondering how? well you know, because of the existance of github. go to the link and grab the code and make your version. ^^ */</p>
+        <p>visualizer inspiration:</p>
+        <ul class="visualizerinspiration">
+          <li><a href="https://thecodingtrain.com/challenges/125-fourier-series">fourier series stuff</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jEwAMgcCgOA">p5 js: sound stuff</a></li>
+          <li><a href="https://www.youtube.com/watch?v=qS4H6PEcCCA">epicycle stuff</a></li>
+        </ul>
+        <p class="danielshiffman">(btw, huge fan of <span><a href="https://thecodingtrain.com/">Daniel Shiffman</a></span>)</p>
+        <p class="websiteinspiration">website inspiration: <a href="https://musicforprogramming.net/latest/">music for programming</a></p>
+        <p class="mysite"><a href="https://shafayet98.github.io">Hi! this is my website</a></p>
+        <p class="mygithub"><a href="https://github.com/shafayet98">this is my github</a> </p>
+
+      </div>
     </div>
 
-    <!-- <script src="configdata.js"></script> -->
-    <!-- <script src="codingtrain.js"></script> -->
-    <script src="songsConfig.js"></script>
-    <script src="fourier.js"></script>
-    <script src="sketch.js"></script>
-    
-  </body>
+  </div>
+
+  <!-- <script src="configdata.js"></script> -->
+  <!-- <script src="codingtrain.js"></script> -->
+  <script src="songsConfig.js"></script>
+  <script src="fourier.js"></script>
+  <script src="sketch.js"></script>
+
+</body>
+
 </html>

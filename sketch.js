@@ -57,7 +57,7 @@ function draw() {
         x += radius * cos(n * time);
         y += radius * sin(n * time);
 
-        stroke(255, 100);
+        stroke(255);
         noFill();
         ellipse(prevx, prevy, radius * 2);
 

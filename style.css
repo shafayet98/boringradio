@@ -114,6 +114,21 @@ canvas {
   color: rgb(41, 200, 142);
 }
 
+/* pause design */
+.pauseSong p{
+  border: 1px solid rgb(41, 200, 142);
+  border-style: dashed;
+  color: rgb(41, 200, 142);
+  margin-bottom: 10px;
+  padding: 5px;
+  margin: 0px !important;
+}
+.pauseSong p:hover{
+  cursor: pointer;
+  background-color: rgb(40,126,89);
+  color: white;
+  
+}
 
 /* the msg */
 .wrapperMsg {

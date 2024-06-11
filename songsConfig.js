@@ -1,3 +1,13 @@
+
+
+
+document.querySelector(".pauseSong").addEventListener('click', function(e){
+    e.preventDefault();
+    console.log("Here");
+    pauseSongtoggle();
+})
+
+
 document.querySelector(".itzy_freaky").addEventListener('click', function(e){
     e.preventDefault();
     if(song.isPlaying()){

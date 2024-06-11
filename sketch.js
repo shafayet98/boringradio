@@ -3,6 +3,7 @@ let x = [];
 let y = [];
 let time = 0;
 let wave = [];
+var pauseSong;
 
 var song;
 var fft;
@@ -25,13 +26,25 @@ function preload() {
 }
 
 
+function toggleSong() {
+    if (song.isPlaying()) {
+      song.pause();
+    } else {
+      song.play();
+    }
+  }
+
 function setup() {
     var myCanvas = createCanvas(600, 200);
     myCanvas.parent("containsCanvas");
 
     song = bol4_some;
     song.play();
+    div = createP('pause()');
+    div.parent("pause");
+    div.mousePressed(toggleSong);
     amp = new p5.Amplitude();
+    
 }
 
 function draw() {
@@ -93,6 +106,8 @@ function draw() {
     if (wave.length > 250) {
         wave.pop();
     }
+
+    
 }
 
 

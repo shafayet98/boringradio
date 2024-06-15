@@ -3,8 +3,8 @@
 
 document.querySelector(".pauseSong").addEventListener('click', function(e){
     e.preventDefault();
-    console.log("Here");
-    pauseSongtoggle();
+    // console.log("Here");
+    // pauseSongtoggle();
 })
 
 

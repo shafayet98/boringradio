@@ -2,23 +2,25 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: rgb(32,32,32);
+  background: rgb(32, 32, 32);
   color: white !important;
   font-family: 'Space Mono', monospace !important;
 }
 
-.mainheading_kpop{
+.mainheading_kpop {
   color: rgb(233, 57, 236);
 }
-.mainheading_while{
-  color: rgb(25,181,255)
+
+.mainheading_while {
+  color: rgb(25, 181, 255)
 }
-.mainheading_coding{
-  color: rgb(200,119,39);
+
+.mainheading_coding {
+  color: rgb(200, 119, 39);
 }
 
 
-.logo{
+.logo {
   text-align: center;
 }
 
@@ -26,22 +28,22 @@ canvas {
   display: block;
 }
 
-.container{
+.container {
   margin-top: 80px !important;
   margin-left: 10px !important;
   margin-right: 0px !important;
 }
 
-#containsCanvas{
+#containsCanvas {
   border: 1px solid white;
 }
 
-.visualiser{
+.visualiser {
   margin-top: 100px;
   border: 1px solid white;
 }
 
-.artist_details img{
+.artist_details img {
   width: 220px;
   height: 220px;
   border-left: 0px;
@@ -52,70 +54,78 @@ canvas {
 }
 
 
-.allsongs_list{
+.allsongs_list {
   list-style-type: none;
   padding-left: 0 !important;
   font-style: italic;
 }
 
-.allsongs_list li:hover{
+.allsongs_list li:hover {
   cursor: pointer;
   font-weight: bolder;
   /* background-color: rgb(41, 200, 142); */
-  background-color: rgb(254,69,180);
+  background-color: rgb(254, 69, 180);
   /* color: black; */
 }
 
-.artist_details h6, .songs_container h6{
-  color: rgb(200,119,39);
+.artist_details h6,
+.songs_container h6 {
+  color: rgb(200, 119, 39);
   font-weight: bolder !important;
 }
 
-.details p{
-  color: rgb(221,221,38);
+.details p {
+  color: rgb(221, 221, 38);
 }
 
-.allsongs_list li .time{
+.allsongs_list li .time {
   float: right;
 }
 
-.totalcount p{
+.totalcount p {
   margin-bottom: 0px !important;
-  color: rgb(137,137,137);
+  color: rgb(137, 137, 137);
   font-size: 13px;
 }
 
-.nowplaying{
+.nowplaying {
   /* background-color: rgb(180,98,255); */
   /* rgb(25,181,255) */
   font-size: 14px;
   font-style: italic;
 }
-.functionStyle{
-  color: rgb(25,181,255);
-}
-.headingnowplayingStyle{
-  color: rgb(200,119,39);
-}
-.returnHeading{
-  color: rgb(254,69,180);
-}
-.songname{
-  color: rgb(221,221,38);
-}
-.artistname{
-  color: rgb(41, 200, 142);
-}
-.whythisproject a:link, .whythisproject a:visited{
-  color: rgb(40,126,89);
+
+.functionStyle {
+  color: rgb(25, 181, 255);
 }
 
-.whythisproject a:hover{
+.headingnowplayingStyle {
+  color: rgb(200, 119, 39);
+}
+
+.returnHeading {
+  color: rgb(254, 69, 180);
+}
+
+.songname {
+  color: rgb(221, 221, 38);
+}
+
+.artistname {
+  color: rgb(41, 200, 142);
+}
+
+.whythisproject a:link,
+.whythisproject a:visited {
+  color: rgb(40, 126, 89);
+}
+
+.whythisproject a:hover {
   color: rgb(41, 200, 142);
 }
 
 /* pause design */
-.pauseSong p{
+.pauseSong p {
   border: 1px solid rgb(41, 200, 142);
   border-style: dashed;
   color: rgb(41, 200, 142);
@@ -123,11 +133,12 @@ canvas {
   padding: 5px;
   margin: 0px !important;
 }
-.pauseSong p:hover{
+
+.pauseSong p:hover {
   cursor: pointer;
-  background-color: rgb(40,126,89);
+  background-color: rgb(40, 126, 89);
   color: white;
-  
+
 }
 
 /* the msg */
@@ -135,7 +146,7 @@ canvas {
   /* width: 200px; */
   height: 32px;
   margin: auto;
-  border: 2px solid rgb(40,126,89);
+  border: 2px solid rgb(40, 126, 89);
   overflow-x: hidden;
 }
 
@@ -154,55 +165,100 @@ canvas {
   0% {
     transform: translateX(600px);
   }
+
   100% {
     transform: translateX(-560px);
   }
 }
 
 /* about me/ project */
-.aboutme{
+.aboutme {
   font-size: 14px;
 }
-.aboutme h6{
-  color: rgb(200,119,39);
+
+.aboutme h6 {
+  color: rgb(200, 119, 39);
   font-weight: bolder !important;
 }
-.aboutme .whythisproject{
+
+.aboutme .whythisproject {
   font-size: 16px;
-  color: rgb(137,137,137);
+  color: rgb(137, 137, 137);
 }
 
-.visualizerinspiration li a:link, .visualizerinspiration li a:visited, .websiteinspiration a:link, .websiteinspiration a:visited{
-  color: rgb(40,126,89);
+.visualizerinspiration li a:link,
+.visualizerinspiration li a:visited,
+.websiteinspiration a:link,
+.websiteinspiration a:visited {
+  color: rgb(40, 126, 89);
   font-size: 13px;
 }
-.visualizerinspiration li a:hover, .websiteinspiration a:hover{
+
+.visualizerinspiration li a:hover,
+.websiteinspiration a:hover {
   color: rgb(41, 200, 142);
 }
 
-.danielshiffman span a:link, .danielshiffman span a:visited{
+.danielshiffman span a:link,
+.danielshiffman span a:visited {
   text-decoration: none !important;
-  color: rgb(254,69,180);
+  color: rgb(254, 69, 180);
 }
-.danielshiffman span a:hover{
+
+.danielshiffman span a:hover {
   text-decoration: none !important;
   color: rgb(233, 57, 236);
 }
 
-.findme{
+.findme {
   margin-top: 10px;
-  float:right;
+  float: right;
   text-align: right;
 }
 
-.findme p{
+.findme p {
   margin: 0px !important;
 }
-.findme a:link, .findme a:visited{
+
+.findme a:link,
+.findme a:visited {
   text-decoration: none;
-  color: rgb(254,69,180);
+  color: rgb(254, 69, 180);
 }
-.findme a:hover{
+
+.findme a:hover {
   text-decoration: underline;
-  color: rgb(254,69,180);
+  color: rgb(254, 69, 180);
 }
+
+
+/* responsive */
+
+/* @media screen and (min-width: 500px) {
+
+  .col-sm-6,
+  .col-sm-3 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  .container {
+    margin-top: 80px !important;
+    margin-left: 10px !important;
+    margin-right: 0px !important;
+  }
+} */

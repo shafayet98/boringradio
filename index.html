@@ -8,7 +8,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 
 
@@ -17,25 +18,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-
-
-
-
   <meta charset="utf-8" />
 
 </head>
 
 <body>
 
-  <h4 class="logo mt-3"><span class="mainheading_kpop">${kpop}</span> <span class="mainheading_while">while</span> <span class="mainheading_coding">coding</span></h4>
-  
-  <div class="container">
+  <h4 class="logo mt-3"><span class="mainheading_kpop">${kpop}</span> <span class="mainheading_while">while</span> <span
+      class="mainheading_coding">coding</span></h4>
+
+
+  <!-- huge testing -->
+
+  <!-- <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <div class="nowplaying"><span class="functionStyle">function</span> <span
+        Hello
+      </div>
+      <div class="col-sm-6">
+        Hello
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 vinylcontainer">
+        <div class="nowplaying mb-2"><span class="functionStyle">function</span> <span
             class="headingnowplayingStyle">nowplaying</span>(<span>songName</span>, <span>artistName</span>){<span
             class="returnHeading">return</span> "<span class="songname">some</span> by <span
-            class="artistname">bol4</span>"}</div>
+            class="artistname">bol4</span>"}
+        </div>
         <div id="containsCanvas"></div>
         <div class="wrapperMsg mt-2">
           <p class="targetMsg">function importantMsg(){return "Make sure to drink enough water today...^^ "}</p>
@@ -54,47 +67,60 @@
           </ul>
           <div id="pause" class="pauseSong"></div>
 
-          <div class="totalcount">
+          <div class="totalcount mt-2">
             <p>// total song: 08</p>
             <p>// times taken: around 23 minutes</p>
             <p>// popular track: "some" by "bol4"</p>
             <p>// How are you doing? Really?</p>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="artist_details">
-          <img src="posters/bol4.png" alt="">
-          <h6 class="mt-2">{about artist}</h6>
-          <div class="details mt-2">
+
+          <div class="mobile_fp featured_post mt-3 d-none">
+            <h6>{This week's featured post}</h6>
+  
+            <p class="title mt-3">About 5:30 AM</p>
             <p>
-              "Bolbbalgan4, also known as BOL4 or Blushing Youth, is a South Korean musical act formed by Shofar Music
-              in 2016. They appeared on Superstar K6 in 2014 before signing a contract with their current agency. BOL4
-              was originally a duo consisting of Ahn Ji-young and Woo Ji-yoon."
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptate libero facilis voluptatibus?
+              Repellendus repellat, tempore nulla ullam corrupti velit a eum fuga provident, non voluptatum. Ad, ab.
+              Aliquid delectus consectetur quisquam aliquam, culpa veritatis iure nemo voluptate tempora itaque velit?
+              Libero commodi quas assumenda?
+  
             </p>
+            <div class="findme">
+              <h6>{find me}</h6>
+              <p class="mysite"><a href="https://shafayet98.github.io">self.website</a></p>
+              <p class="mygithub"><a href="https://github.com/shafayet98">self.github</a></p>
+              <p class="mygithub"><a
+                  href="https://www.instagram.com/sapphireblue_o_?igsh=b2R0Z2VsYWIzcWF0&utm_source=qr">self.instagram</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-3 aboutme">
-        <h6>{about me}</h6>
-        <p class="whythisproject">/* well i got bored and made this site. i have no intention to update this in future. but you guys can,
-          wondering how? well you know, because of the existance of github. go to the <a href="https://github.com/shafayet98/boringradio">link</a> and grab the code and make your version. happy coding. ^^ */</p>
-        <p>visualizer inspiration:</p>
-        <ul class="visualizerinspiration">
-          <li><a href="https://thecodingtrain.com/challenges/125-fourier-series">fourier series stuff</a></li>
-          <li><a href="https://www.youtube.com/watch?v=jEwAMgcCgOA">p5 js: sound stuff</a></li>
-          <li><a href="https://www.youtube.com/watch?v=qS4H6PEcCCA">epicycle stuff</a></li>
-        </ul>
-        <p class="danielshiffman">(btw, huge fan of <span><a href="https://thecodingtrain.com/">Daniel Shiffman</a></span>)</p>
-        <p class="websiteinspiration">website inspiration: <a href="https://musicforprogramming.net/latest/">music for programming</a></p>
+
+      <div class="col-sm-6 aboutme">
+
+        <div class="featured_post">
+          <h6>{This week's featured post}</h6>
+
+          <p class="title mt-3">About 5:30 AM</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptate libero facilis voluptatibus?
+            Repellendus repellat, tempore nulla ullam corrupti velit a eum fuga provident, non voluptatum. Ad, ab.
+            Aliquid delectus consectetur quisquam aliquam, culpa veritatis iure nemo voluptate tempora itaque velit?
+            Libero commodi quas assumenda?
+
+          </p>
+          <div class="findme">
+            <h6>{find me}</h6>
+            <p class="mysite"><a href="https://shafayet98.github.io">self.website</a></p>
+            <p class="mygithub"><a href="https://github.com/shafayet98">self.github</a></p>
+            <p class="mygithub"><a
+                href="https://www.instagram.com/sapphireblue_o_?igsh=b2R0Z2VsYWIzcWF0&utm_source=qr">self.instagram</a>
+            </p>
+          </div>
+        </div>
 
         
-        <div class="findme">
-          <h6>{find me}</h6>
-          <p class="mysite"><a href="https://shafayet98.github.io">self.website</a></p>
-          <p class="mygithub"><a href="https://github.com/shafayet98">self.github</a></p>
-          <p class="mygithub"><a href="https://www.instagram.com/sapphireblue_o_?igsh=b2R0Z2VsYWIzcWF0&utm_source=qr">self.instagram</a></p>
-        </div>
       </div>
     </div>
 
@@ -102,10 +128,31 @@
 
   <!-- <script src="configdata.js"></script> -->
   <!-- <script src="codingtrain.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+  <script>
+
+    console.log(window.innerWidth);
+
+    if (window.innerWidth < 1000) {
+      console.log(window.innerWidth)
+      document.querySelector(".aboutme").classList.add("d-none");
+
+      document.querySelector(".vinylcontainer").classList.remove("col-sm-6");
+      document.querySelector(".vinylcontainer").classList.add("col-sm-12");
+      document.querySelector(".mobile_fp").classList.remove("d-none");
+    }
+
+  </script>
   <script src="songsConfig.js"></script>
   <script src="fourier.js"></script>
   <script src="sketch.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
 
 </body>
 

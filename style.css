@@ -30,7 +30,7 @@ canvas {
 
 .container {
   margin-top: 80px !important;
-  margin-left: 10px !important;
+  margin-left: 5% !important;
   margin-right: 0px !important;
 }
 
@@ -173,6 +173,7 @@ canvas {
 
 /* about me/ project */
 .aboutme {
+  padding-left: 10%;
   font-size: 14px;
 }
 
@@ -262,3 +263,14 @@ canvas {
     margin-right: 0px !important;
   }
 } */
+
+@media screen and (max-width: 1000px) {
+  .container{
+    margin-left: 15% !important;
+    margin-right: 0px !important;
+  }
+}
+
+.featured_post .title{
+  text-decoration: underline;
+}

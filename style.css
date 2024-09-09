@@ -177,8 +177,9 @@ canvas {
   font-size: 14px;
 }
 
-.aboutme h6 {
-  color: rgb(200, 119, 39);
+.aboutme .featured_post h6 {
+  /* color: rgb(200, 119, 39); */
+  color: rgb(254, 69, 180);
   font-weight: bolder !important;
 }
 
@@ -211,6 +212,9 @@ canvas {
   color: rgb(233, 57, 236);
 }
 
+.findme h6{
+  color: rgb(200, 119, 39) !important;
+}
 .findme {
   margin-top: 10px;
   float: right;
@@ -219,6 +223,7 @@ canvas {
 
 .findme p {
   margin: 0px !important;
+  
 }
 
 .findme a:link,
@@ -273,4 +278,7 @@ canvas {
 
 .featured_post .title{
   text-decoration: underline;
+}
+.featured_post h6{
+  color: rgb(254, 69, 180);
 }
